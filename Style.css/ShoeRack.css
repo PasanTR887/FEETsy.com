@@ -1,0 +1,24 @@
+.d-flex{
+    background-color: black;
+}
+
+.collection01 h2{
+    font-size: 30px;
+    font-weight: 600;
+    font-family:Georgia;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    text-decoration: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    text-shadow: 2px black;
+    background-color: rgba(89, 85, 85, 0.826);
+    background-blend-mode:multiply;
+    width: 50%;
+    margin-left: 26%;
+    border-radius: 20px;
+}
