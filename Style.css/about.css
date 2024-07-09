@@ -32,11 +32,6 @@
     
 }
 
-.WelcomePic img{
-    max-height: 65vh;
-    max-width: fit-content;
-
-}
 
 .WelcomePara p{
     margin-left: 25px;
@@ -49,11 +44,6 @@
     color: red;
 }
 
-.MissionImg img{
-    max-height: 70vh;
-    max-width:95%;
-
-}
 
 .MissionPara {
     padding-left: 70px;
@@ -79,10 +69,7 @@
     font-weight: 300;
 }
 
-.TeamPic img{
-    max-height: 60vh;
-    max-width:550px;
-} 
+
 
 .TeamPara h3{
     font-family: Impact;
