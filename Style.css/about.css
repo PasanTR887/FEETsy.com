@@ -75,3 +75,42 @@
     font-family: Impact;
     color: red;
 }
+
+/* FAQ CSS */
+
+.buttn button{
+    align-items: center;
+    align-self: center;
+}
+ .border {
+    border-radius: 20px;
+    border-color: rgb(255, 0, 0);
+ }
+
+ .border h5{
+    font-style:unset;
+    font-size: 16PX;
+    font-weight:bold;
+    color: rgb(255, 38, 0);
+    text-align: center;
+ }
+
+ .fq1 p{
+    font-weight: 500;
+    margin-top: 5px;
+    font-family: 'Times New Roman' ;
+    text-align: center;
+ }
+
+ /*Privacy & Policy  */
+
+ .PpContent {
+    text-align: center;
+    color: black;
+    font-weight: 500;
+ }
+
+ .ppheader {
+    color: red;
+    text-align: center;
+ }
