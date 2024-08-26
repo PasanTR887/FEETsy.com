@@ -11,36 +11,33 @@
         
         
         <!--Header Section-->
-        <header class="d-flex flex-wrap justify-content-center py-1 fixed-top navback">
-            <a href="Home.html" class="d-flex align-items-center   me-md-auto link-body-emphasis text-decoration-none">
-              <svg width="40" height="32"><use xlink:href="#bootstrap"><!--Use to define and reuse of SVG Grapics--></use></svg>
-              <Img src="Images/newfs.jpg" alt="brandLogo" width="120px" height="30px"> 
-            </a>
-        <!--Nav bar-->
-        <nav class="navbar navbar-expand-lg">
-          <div class="collapse navbar-collapse">
-           <ul class="navbar-nav ml-auto"><!--nav-pills set list item looks like buttons and round edge-->
-              <li class="nav-item">
-                <a href="Home.html" class="nav-link active " aria-current="page"> Home </a>
-              </li>
-              <li class="nav-item">
-                <a href="About.html" class="nav-link">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a href="sales.html" class="nav-link">Sales & Promotions </a>
-              </li>
-              <li class="nav-item">
-                <a href="shoeRack.html" class="nav-link">Shoe Rack </a>
-              </li>
-              <li class="nav-item">
-                <a href="contactUs.html" class="nav-link">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-        </nav>    
-        </header>
-
-        <br><br>
+        <header class="d-flex flex-wrap justify-content-between align-items-center py-1 fixed-top navback">
+          <a href="Home.html" class="d-flex align-items-center me-md-auto link-body-emphasis text-decoration-none">
+              <img src="Images/newfs.jpg" alt="brandLogo" width="120px" height="30px">
+          </a>
+          <!--Nav bar-->
+          <nav class="navbar">
+              <ul class="navbar-nav d-flex flex-row">
+                  <li class="nav-item mx-2">
+                      <a href="Home.html" class="nav-link active" aria-current="page">Home</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                      <a href="About.html" class="nav-link">About Us</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                      <a href="sales.html" class="nav-link">Sales & Promotions</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                      <a href="shoeRack.html" class="nav-link">Shoe Rack</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                      <a href="contactUs.html" class="nav-link">Contact Us</a>
+                  </li>
+              </ul>
+          </nav>
+      </header>
+      
+    
         <!--Hero Section-->
         <!--Carousel-->
 
@@ -84,7 +81,7 @@
                           <div class="mb-3">
                               <input type="email" class="form-control" placeholder="Email Address" name="email" required>
                           </div>
-                          <button class="btn btn-danger text-center align-items-center col-md-4 offset-md-4" type="submit">Submit</button>
+                          <button class="btn btn-danger text-center align-items-center col-md-4 offset-md-4" type="submit">Sign</button>
                       </form>
                       </div>
                     </div>
@@ -93,16 +90,18 @@
               </div>
             </div>
             <script>
-              document.getElementById('signUpForm').addEventListener('submit', function(event) {
-                  event.preventDefault(); // Prevent default form submission
-                  
-                  // Close the modal
-                  var modal = bootstrap.Modal.getInstance(document.getElementById('exampleModal'));
-                  modal.hide();
-          
-                  // Show success alert
-                  alert('You are successfully signed in!!!');
-              });
+             document.getElementById("signUpForm").addEventListener("submit", function(event) {
+          event.preventDefault(); // Prevent form submitting normally
+    
+          // Check all fields are filled
+          let form = event.target;
+          if (form.checkValidity()) {
+            
+            alert("You have successfully signed Up!");
+            
+            form.submit(); // if you want to submit the form after showing the alert
+          }
+          });
           </script>
             <div class="carousel-item">
               <img src="Images/new88.jpg" class="d-block w-100" alt="FEETsy Logo">
@@ -159,7 +158,7 @@
                 <div class="card CardH" >
                     <img src="Images/nike678.jpg" class="card-img-top NAImg" alt="Shoe pic 1">
                     <div class="card-body">
-                        <h6 class="card-title">NIKE | Air Max 1</h6>
+                        <h6 class="card-title">NIKE | Air Max 1' Olympic Edition</h6>
                         <p class="card-text">Rs.45,500/=</p>
                         <p class="text-body-secondary">Men's Shoes <br>Only Olympic White</p> 
                         <a class="effect1" href="AirMax1H.html"> 

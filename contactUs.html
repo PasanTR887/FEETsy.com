@@ -10,33 +10,30 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script><!--Link JS-->
     <!--Header Section-->
-    <header class="d-flex flex-wrap justify-content-center py-1 fixed-top mainnav navback">
-      <a href="Home.html" class="d-flex align-items-center   me-md-auto link-body-emphasis text-decoration-none">
-        <svg width="40" height="32"><use xlink:href="#bootstrap"><!--Use to define and reuse of SVG Grapics--></use></svg>
-        <Img src="Images/newfs.jpg" alt="brandLogo" width="120px" height="30px"> 
+    <header class="d-flex flex-wrap justify-content-between align-items-center py-1 fixed-top navback">
+      <a href="Home.html" class="d-flex align-items-center me-md-auto link-body-emphasis text-decoration-none">
+          <img src="Images/newfs.jpg" alt="brandLogo" width="120px" height="30px">
       </a>
-  <!--Nav bar-->
-  <nav class="navbar navbar-expand-lg">
-    <div class="collapse navbar-collapse">
-     <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a href="Home.html" class="nav-link"> Home </a>
-        </li>
-        <li class="nav-item">
-          <a href="About.html" class="nav-link">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a href="sales.html" class="nav-link">Sales & Promotions </a>
-        </li>
-        <li class="nav-item">
-          <a href="shoeRack.html" class="nav-link">Shoe Rack </a>
-        </li>
-        <li class="nav-item">
-          <a href="contactUs.html" class="nav-link active" aria-current="page" >Contact Us</a>
-        </li>
-      </ul>
-    </div>
-  </nav>    
+      <!--Nav bar-->
+      <nav class="navbar">
+          <ul class="navbar-nav d-flex flex-row">
+              <li class="nav-item mx-2">
+                  <a href="Home.html" class="nav-link" >Home</a>
+              </li>
+              <li class="nav-item mx-2">
+                  <a href="About.html" class="nav-link">About Us</a>
+              </li>
+              <li class="nav-item mx-2">
+                  <a href="sales.html" class="nav-link">Sales & Promotions</a>
+              </li>
+              <li class="nav-item mx-2">
+                  <a href="shoeRack.html" class="nav-link">Shoe Rack</a>
+              </li>
+              <li class="nav-item mx-2">
+                  <a href="contactUs.html" class="nav-link active" aria-current="page">Contact Us</a>
+              </li>
+          </ul>
+      </nav>
   </header>
   <!-- About Us logo section  -->
   <section class="banner ">
@@ -49,11 +46,11 @@
             <h1 class="text-center "><b>...Submit a Request...</b></h1>
     </div>
     <div class="container col-md-6" >
-      <form>
+      <form id="requestForm">
         <div class="form-group">
           <label><b>Request Type :</b></label>
           <br>
-          <select class="rounded-lg p-2 pr-12  mt-2 col-md-12" style="border-radius: 20px;"required>
+          <select class="rounded-lg p-2 pr-12  mt-2 col-md-12" style="border-radius: 20px;" required>
             <option value="0">Select Option</option>
             <option value="Order Update">Order Update</option>
             <option value="Wrong Item Received">Wrong item received</option>
@@ -94,6 +91,20 @@
           <button type="submit" class="btn btn-danger" style="border-radius: 10px;">Submit</button>
         </div>
       </form>
+      <script>
+        document.getElementById("requestForm").addEventListener("submit", function(event) {
+          event.preventDefault(); // Prevent form submitting normally
+    
+          // Check all fields are filled
+          let form = event.target;
+          if (form.checkValidity()) {
+            
+            alert("Your request was successfully submitted!");
+            
+            form.submit(); // if you want to submit the form after showing the alert
+          }
+        });
+      </script>
       <br><br>
       <div>
         <h2 style="font-family: Tahoma; font-weight: 700;">Visit Us :</h2>
