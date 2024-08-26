@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Air Force 01' | FEETsy.com</title>
+        <link rel="icon" href="Images/FEETsy (1) (1).jpg">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!--Link Bootsrap -->
+        <link rel="stylesheet" href="Style.css/home.css">
+    </head>
+    <body>
+        <header class="d-flex flex-wrap justify-content-center py-1 fixed-top navback">
+            <a href="Home.html" class="d-flex align-items-center   me-md-auto link-body-emphasis text-decoration-none">
+              <svg width="40" height="32"><use xlink:href="#bootstrap"><!--Use to define and reuse of SVG Grapics--></use></svg>
+              <Img src="Images/newfs.jpg" alt="brandLogo" width="120px" height="30px"> 
+            </a>
+        <!--Nav bar-->
+        <nav class="navbar navbar-expand-lg">
+          <div class="collapse navbar-collapse">
+           <ul class="navbar-nav ml-auto"><!--nav-pills set list item looks like buttons and round edge-->
+              <li class="nav-item">
+                <a href="Home.html" class="nav-link" > Home </a>
+              </li>
+              <li class="nav-item">
+                <a href="About.html" class="nav-link">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="sales.html" class="nav-link">Sales & Promotions </a>
+              </li>
+              <li class="nav-item">
+                <a href="shoeRack.html" class="nav-link">Shoe Rack </a>
+              </li>
+              <li class="nav-item">
+                <a href="contactUs.html" class="nav-link">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>    
+        </header>
+
+        <br><br>
+        <div class="container mt-5">
+            <div class="row">
+                <!-- Product Gallery -->
+                <div class="col-md-8">
+                    <div class="product-gallery">
+                        <img src="Gallery/SP1.jpg" alt="Nike Air Force 1">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img src="Gallery/SP3.jpg" alt="Nike Air Force 1" class="mt-3">
+                            </div>
+                                 <div class="col-sm-6">
+                                    <img src="Gallery/SP2.jpg" alt="Nike Air Force 1" class="mt-3">
+                            </div>
+                        </div>
+                        <img src="Gallery/SP4.jpg" alt="Nike Air Force 1" class="mt-3">
+                    </div>
+                </div>
+                <br><br>
+                <!-- Product Details -->
+                <div class="col-md-4">
+                    <div class="product-details">
+                        <div class="product-title">Nike Air Force 1' Low Retro </div>
+                        <div class="product-price my-3"><b>Rs.25,500/=</b></div>
+                        <br><br>
+                        <!-- Product Size Options -->
+                        <div class="product-size mb-4">
+                            <button class="btn size-btn" data-size="36" onclick="selectSize(this)">39</button>
+                            <button class="btn size-btn" data-size="37" onclick="selectSize(this)">39.5</button>
+                            <button class="btn size-btn" data-size="40" onclick="selectSize(this)">40</button>
+                            <button class="btn size-btn" data-size="41" onclick="selectSize(this)">40.5</button>
+                            <button class="btn size-btn" data-size="41.5" onclick="selectSize(this)">41</button>
+                            <button class="btn size-btn" data-size="42" onclick="selectSize(this)">41.5</button>
+                            <button class="btn size-btn" data-size="43" onclick="selectSize(this)">42</button>
+                        </div>
+
+                        <script>
+                            function selectSize(button) {
+                                // Remove 'selected' class from all buttons
+                                const buttons = document.querySelectorAll('.size-btn');
+                                buttons.forEach(btn => btn.classList.remove('selected'));
+                        
+                                // Add 'selected' class to the clicked button
+                                button.classList.add('selected');
+                            }
+                        </script>
+                        <br><br>
+                        <!-- Add to Cart Button -->
+                        <span class="bg"></span><div>
+                            <a class="effect1" href="CheckOut.html">
+                              Let's Checkout
+                              <span class="bg"></span>
+                            </a>
+                          </div>
+                          <br><br>
+                        <!-- Product Description -->
+                        <div class="product-description mt-4">
+                          
+                            <h6>  - Nike Air Force 1 Low Retro PRM</h6>
+
+                            <h6>    - "Quickstrike" edition</h6>
+                            
+                            <h6>    - White/Elemental Gold-Dark Hazel-Black</h6>
+                            
+                            <h6>  - Style Code SKU: AO1635-100</h6>
+                            
+                            <h6>   - Summer 2024</h6>
+                            
+                        </div>
+                        
+                        <!-- Additional Information -->
+                        <div class="additional-info mt-5">
+                            <div class="d-flex align-items-center mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
+                                    <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2"/>
+                                  </svg>
+                               &nbsp;&nbsp; <label>Free delivery within Colombo</label>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
+                                    <path d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"/>
+                                  </svg>
+                                  &nbsp;&nbsp; <label>Same day shipping until 5 p.m.</label>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-lock2" viewBox="0 0 16 16">
+                                    <path d="M8 5a1 1 0 0 1 1 1v1H7V6a1 1 0 0 1 1-1m2 2.076V6a2 2 0 1 0-4 0v1.076c-.54.166-1 .597-1 1.224v2.4c0 .816.781 1.3 1.5 1.3h3c.719 0 1.5-.484 1.5-1.3V8.3c0-.627-.46-1.058-1-1.224"/>
+                                    <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1"/>
+                                  </svg>
+                                  &nbsp;&nbsp; <label>100% secure payment</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script><!--Link JS-->
+
+        <!--Footer  -->
+      
+        <div class="container my-5">
+          
+            <footer class="py-5 ">
+              <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                  <h5>Menu Bar:</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                      <a href="Home.html" class="nav-link p-0 text-body-secondary">Home</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                      <a href="About.html" class="nav-link p-0 text-body-secondary">About Us</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                      <a href="sales.html" class="nav-link p-0 text-body-secondary">Sales & Promotions</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                      <a href="shoeRack.html" class="nav-link p-0 text-body-secondary">Shoe Rack</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                      <a href="contactUs.html" class="nav-link p-0 text-body-secondary">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="col-6 col-md-2 mb-3">
+                  <h5>Support:</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                      <a href="Pivacy.html" class="nav-link p-0 text-body-secondary">Pivacy & Policy</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                      <a href="FAQs.html" class="nav-link p-0 text-body-secondary">FAQs</a>
+                    </li>
+                  </ul>
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class=" col-6 offset-md-1 mb-3" >
+                  <form id="subscribeForm">
+                    <h5>Subscribe to us :</h5>
+                    <p> Hey! Drop your E-mail address and join the Community. :</p>
+                    <div class="d-block  flex-sm-row gap-2">
+                      <label  class="visually-hidden">Email address</label>
+                      <input  type="email" class="form-control" placeholder="Email address" id="emailInput" required >
+                      <br>
+                      <button class="btn btn-danger " type="submit"  onclick="validateForm()" >Subscribe</button>
+                    </div>
+                  </form>
+                  <script>
+                    function validateForm() {
+                    const emailInput = document.getElementById("emailInput");
+                    const emailValue = emailInput.value;
+  
+                    if (emailValue === "") {
+                      alert("Please enter a valid email address.");
+                      emailInput.focus();
+                      return false; 
+                    } else {
+                      alert("You're successfully subscribed . We'll inform our latest drops as soon as we dropped.");
+                      return true;
+                    }
+                  }
+                  </script>
+                </div>
+              </div>
+            <br><br>
+              <div class="d-flex flex-column  " style="background-color:rgb(0, 0, 0);" >
+                <p style="color:rgb(255, 255, 255); padding-top: 10px;" class="text-center">Copyright © 2024 FEETsy.com , Inc. All Rights Reserved.</p>
+              </div>
+            </footer>
+          </div>
+    </body>
+</html>    

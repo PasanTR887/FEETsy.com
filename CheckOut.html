@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Checkout | FEETsy.com</title>
+        <link rel="icon" href="Images/FEETsy (1) (1).jpg">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!--Link Bootsrap -->
+        <link rel="stylesheet" href="Style.css/home.css">
+    </head>
+<body>
+    <!--Header Section-->
+    <header class="d-flex flex-wrap justify-content-center py-1 fixed-top navback">
+        <a href="Home.html" class="d-flex align-items-center   me-md-auto link-body-emphasis text-decoration-none">
+          <svg width="40" height="32"><use xlink:href="#bootstrap"><!--Use to define and reuse of SVG Grapics--></use></svg>
+          <Img src="Images/newfs.jpg" alt="brandLogo" width="120px" height="30px"> 
+        </a>
+    <!--Nav bar-->
+    <nav class="navbar navbar-expand-lg">
+      <div class="collapse navbar-collapse">
+       <ul class="navbar-nav ml-auto"><!--nav-pills set list item looks like buttons and round edge-->
+          <li class="nav-item">
+            <a href="Home.html" class="nav-link"> Home </a>
+          </li>
+          <li class="nav-item">
+            <a href="About.html" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="sales.html" class="nav-link">Sales & Promotions </a>
+          </li>
+          <li class="nav-item">
+            <a href="shoeRack.html" class="nav-link">Shoe Rack</a>
+          </li>
+          <li class="nav-item">
+            <a href="contactUs.html" class="nav-link">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>    
+    </header>
+    <br><br>
+    <section class="banner  py-3 ">
+        <h1  style="background-image:url(Images/newarr.jpg);">
+            Let's Checkout
+        </h1>
+    </section>
+    
+    <div class="container col-md-6">
+        <main>
+            <div class="col-12 ">
+              <h3 class="mb-3 COh3">Billing address</h3>
+              <form class="needs-validation" novalidate="" id="checkoutForm">
+                <div class="row g-3">
+                  <div class="col-sm-6">
+                    <label for="firstName" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required="" fdprocessedid="zezuho">
+                    <div class="invalid-feedback">
+                      Valid first name is required.
+                    </div>
+                  </div>
+      
+                  <div class="col-sm-6">
+                    <label for="lastName" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required="" fdprocessedid="b1ncd">
+                    <div class="invalid-feedback">
+                      Valid last name is required.
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="email" class="form-label">Email <span class="text-body-secondary">(Optional)</span></label>
+                    <input type="email" class="form-control " id="email" placeholder="you@example.com" fdprocessedid="bdi0mh">
+                    <div class="invalid-feedback">
+                      Please enter a valid email address for shipping updates.
+                    </div>
+                  </div>
+      
+                  <div class="col-12">
+                    <label for="address" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="" fdprocessedid="79zww">
+                    <div class="invalid-feedback">
+                      Please enter your shipping address.
+                    </div>
+                  </div>
+      
+                  <div class="col-12">
+                    <label for="address2" class="form-label">Address 2 <span class="text-body-secondary">(Optional)</span></label>
+                    <input type="text" class="form-control" id="address2" placeholder="Apartment or suite" fdprocessedid="ykpdp">
+                  </div>
+      
+                  <div class="col-md-5">
+                    <label for="country" class="form-label">Country</label>
+                    <select class="form-select" id="country" required="" fdprocessedid="ea1c9">
+                      <option value="">Choose...</option>
+                      <option>Sri Lanka</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select a valid country.
+                    </div>
+                  </div>
+      
+                  <div class="col-md-4">
+                    <label for="state" class="form-label">City</label>
+                    <select class="form-select" id="state" required="" fdprocessedid="0uvcc">
+                      <option value="">Choose...</option>
+                      <option>Colombo</option>
+                      <option>Gampaha</option>
+                      <option>Kandy</option>
+                      <option>Galle</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please provide a valid state.
+                    </div>
+                  </div>
+      
+                  <div class="col-md-3">
+                    <label for="zip" class="form-label">Zip</label>
+                    <input type="text" class="form-control" id="zip" placeholder="" required="" fdprocessedid="xmb9dj">
+                    <div class="invalid-feedback">
+                      Zip code required.
+                    </div>
+                  </div>
+                </div>
+      
+                <hr class="my-4">
+      
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="same-address">
+                  <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
+                </div>
+      
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="save-info">
+                  <label class="form-check-label" for="save-info">Save this information for next time</label>
+                </div>
+      
+                <hr class="my-4">
+      
+                <h3 class="mb-3 COh3">Payment</h3>
+      
+                <div class="my-3">
+                  <div class="form-check">
+                    <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+                    <label class="form-check-label" for="credit">Credit card</label>
+                  </div>
+                  <div class="form-check">
+                    <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+                    <label class="form-check-label" for="debit">Debit card</label>
+                  </div>
+                  <div class="form-check">
+                    <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required="">
+                    <label class="form-check-label" for="paypal">PayPal</label>
+                  </div>
+                </div>
+      
+                <div class="row gy-3">
+                  <div class="col-md-6">
+                    <label for="cc-name" class="form-label">Name on card</label>
+                    <input type="text" class="form-control" id="cc-name" placeholder="" required="" fdprocessedid="gdkneb">
+                    <small class="text-body-secondary">Full name as displayed on card</small>
+                    <div class="invalid-feedback">
+                      Name on card is required
+                    </div>
+                  </div>
+      
+                  <div class="col-md-6">
+                    <label for="cc-number" class="form-label">Credit card number</label>
+                    <input type="text" class="form-control" id="cc-number" placeholder="" required="" fdprocessedid="1p6uki">
+                    <div class="invalid-feedback">
+                      Credit card number is required
+                    </div>
+                  </div>
+      
+                  <div class="col-md-3">
+                    <label for="cc-expiration" class="form-label">Expiration</label>
+                    <input type="text" class="form-control" id="cc-expiration" placeholder="" required="" fdprocessedid="6a6ym6">
+                    <div class="invalid-feedback">
+                      Expiration date required
+                    </div>
+                  </div>
+      
+                  <div class="col-md-3">
+                    <label for="cc-cvv" class="form-label">CVV</label>
+                    <input type="text" class="form-control" id="cc-cvv" placeholder="" required="" fdprocessedid="ptc9lm">
+                    <div class="invalid-feedback">
+                      Security code required
+                    </div>
+                  </div>
+                </div>
+                
+                <hr class="my-4">
+      
+                <button class="w-100 btn btn-danger btn-lg" type="submit" fdprocessedid="iq8z68" >Continue to checkout</button>
+              </form>
+            </div>
+          </div>
+        </main>
+        <script>
+            document.getElementById("checkoutForm").addEventListener("submit", function(event) {
+              event.preventDefault();
+              let form = this;
+          
+              if (form.checkValidity() === false) {
+                event.stopPropagation();
+                alert("Please fill in all the required fields.");
+              } else {
+                alert("Thank you for your purchase!");
+                form.reset();
+                location.reload();
+              }
+          
+              form.classList.add("was-validated");
+            });
+          </script>
+      <!-- footer -->
+        <div class="container my-5">
+          
+            <footer class="py-5 ">
+              <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                  <h5>Menu Bar:</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                      <a href="Home.html" class="nav-link p-0 text-body-secondary">Home</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                      <a href="About.html" class="nav-link p-0 text-body-secondary">About Us</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                      <a href="sales.html" class="nav-link p-0 text-body-secondary">Sales & Promotions</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                      <a href="shoeRack.html" class="nav-link p-0 text-body-secondary">Shoe Rack</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                      <a href="contactUs.html" class="nav-link p-0 text-body-secondary">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="col-6 col-md-2 mb-3">
+                  <h5>Support:</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                      <a href="Pivacy.html" class="nav-link p-0 text-body-secondary">Pivacy & Policy</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                      <a href="FAQs.html" class="nav-link p-0 text-body-secondary">FAQs</a>
+                    </li>
+                  </ul>
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class=" col-6 offset-md-1 mb-3" >
+                  <form id="subscribeForm">
+                    <h5>Subscribe to us :</h5>
+                    <p> Hey! Drop your E-mail address and join the Community. :</p>
+                    <div class="d-block  flex-sm-row gap-2">
+                      <label  class="visually-hidden">Email address</label>
+                      <input  type="email" class="form-control" placeholder="Email address" id="emailInput" required >
+                      <br>
+                      <button class="btn btn-danger " type="submit"  onclick="validateForm()" >Subscribe</button>
+                    </div>
+                  </form>
+                  <script>
+                    function validateForm() {
+                    const emailInput = document.getElementById("emailInput");
+                    const emailValue = emailInput.value;
+  
+                    if (emailValue === "") {
+                      alert("Please enter a valid email address.");
+                      emailInput.focus();
+                      return false; 
+                    } else {
+                      alert("You're successfully subscribed . We'll inform our latest drops as soon as we dropped.");
+                      return true;
+                    }
+                  }
+                  </script>
+                </div>
+              </div>
+            <br><br>
+              <div class="d-flex flex-column  " style="background-color:rgb(0, 0, 0);" >
+                <p style="color:rgb(255, 255, 255); padding-top: 10px;" class="text-center">Copyright © 2024 FEETsy.com , Inc. All Rights Reserved.</p>
+              </div>
+            </footer>
+          </div>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+          </script><!--Link JS-->
+</body>
+</html>
