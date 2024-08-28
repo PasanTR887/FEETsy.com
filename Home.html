@@ -59,6 +59,7 @@
                 Sign Up
                 <span class="bg"></span>
               </a>
+              
 
               <!-- Modal -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
@@ -94,12 +95,16 @@
           event.preventDefault(); // Prevent form submitting normally
     
           // Check all fields are filled
-          let form = event.target;
-          if (form.checkValidity()) {
+          var form = event.target;
+          var confirmSignIn = confirm("Do you want to sign Up ?") ;
+          if (confirmSignIn) {
             
             alert("You have successfully signed Up!");
             
             form.submit(); // if you want to submit the form after showing the alert
+          }else {
+            alert("Sign Up cancelled.");
+            window.location.href = "Home.html"; 
           }
           });
           </script>
@@ -119,18 +124,17 @@
             <div class="carousel-item">
               <img src="Images/Newww22.jpg" class="d-block w-100" alt="LEG5 Shoe">
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <!-- Previous & Next Buttons on Carousel -->
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>        
-
+          
+          
       <br><br>
       <!-- Company fetures -->
       <div class="container  CHFeatures">
